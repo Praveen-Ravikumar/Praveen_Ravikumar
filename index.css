@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+.hr{
+    border-bottom: 0.5px solid;
+    width: 100%;
+    border-color: aliceblue;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+.logo-brand{
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.nav-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.details .detail-title .h6{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 18px;
+    font-weight: 600;
+     letter-spacing: 2px;
+}
+
+.no-underline {
+    text-decoration: none; /* Removes underline by default */
+  }
+  
+
+  .no-underline,
+  .no-underline:active,
+  .no-underline:focus {
+    text-decoration: none !important; /* Force remove underline when clicked or focused */
+    color:rgba(240, 248, 255, 0.79) !important;
+    font-family: 'Courier New', Courier, monospace;
+     font-size: 12px; 
+     letter-spacing: 2px;
+  }
+
+.nav-link{
+    font-family: "Bebas Neue",sans-serif;
+    font-size: 1.3em ;
+    letter-spacing: 3px;
+    color:rgba(240, 248, 255, 0.79) !important;
+    
+   
+}
+
+.nav-link:focus, .nav-link:hover,.nav-item .active {
+    border-bottom: 1px solid white;
+}
+
+.icon-grid {
+    display: grid;
+    place-items: center; /* Centers content both horizontally and vertically */
+    justify-content: flex-end;
+  }
+
+  .hr{
+    margin-top: 0px;
+  }
+
+.icon-container > i{
+    border: 0.5px solid white;
+    font-size: 0.7rem;
+    padding: 6px;
+    color: white !important;
+    border-radius: 8px 0px 8px 8px;
+}
+
+.nav-brand-container{
+    flex-wrap: nowrap;
+}
+.nav-brand-container > .row{
+   width: 100%;
+}
+
+@media (max-width:768px){
+    
+.nav-link:focus, .nav-link:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-link{
+    font-size: 0.8em ;
+    padding: .5rem 0.8rem ;
+}
+
+    .details{
+        flex-direction:column;
+        gap: 5px;
+    }
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-toggler {
+    border-color: white; /* Change border color of the toggler */
+  }
+
+.mobile-header{
+    display: none !important;
+    
+}
+
+@media (min-width: 768px){
+    .sidebar{
+        display: none !important;
+    }
+}
+
+
+/* index2.html */
+@media (max-width:430px){
+    .mobile-header{
+        top: 0px !  important;
+        display: flex !important;
+        position: sticky !important;
+        z-index: 100;
+        padding-top: 1em ! important;
+    }
+}
+
+
+.sidebar {
+    position: fixed !important;
+    /* display: none; */
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 285px;
+    z-index: 999;
+    background-color: rgba(40, 40, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar * {
+    background-color: transparent !important;
+}
+
+@media (max-width:430px){
+    .header{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+  
+}
+
+.img-container{
+    position: relative; /* Ensures it stays within the flow */
+    width:100%;
+    height: 73vh;
+    overflow: hidden; /* Add this to contain the image */
+    
+}
+
+.img-container > img{
+    /* width: 100%;
+    position: sticky;
+    object-fit: cover;
+    object-position:left center;
+    top: 0;  */
+     /* position: fixed; */
+     position: sticky;
+     top: 100px; /* Adjust this value as needed to position the image where you want it */
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: left center;
+    
+}
+
+.text-content {
+    width: 50%;
+    margin-left: 50%;
+    overflow-y: auto; /* Allows scrolling */
+}
+
+
+
+
+
+
+
+.cursor {
+    display: inline-block;
+    width: 6px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgb(250, 250, 250);
+    }
+}
+
+.btn-cv{
+    color: white !important; 
+    border: 1px solid white !important; 
+    border-radius: 40px !important;
+    padding: 0.5em 2em !important;
+    margin-top: 3em;
+    font-family: monospace; 
+    font-size: 1.2em;
+}
+
+#text{
+    font-size: 2em;
+}
+
+
+.text{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing:5px;
+}
+
+.banner-heading > .row{
+    gap: 16rem;
+}
+
+
+.left-section{
+    
+    color: white;
+}
+
+.paragraph-text{
+    font-family: "Inconsolata",monospace;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 26px;
+    
+}
+
+
+
+@media (max-width: 430px){
+    .banner-heading{
+        color: white;
+        padding-top: 1em !important;
+        padding-left: 15px !important;
+    }
+
+    .hero-banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .heading{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        letter-spacing:4px;
+        /* font-style: italic; */
+        text-align: center;
+    }
+
+    .text{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        letter-spacing:5px;
+        text-align: center;
+    }
+    .typing{
+        text-align: center;
+    }
+    .typing > #text{
+        font-size: 1.5rem;
+    }
+
+    .btn-cv{
+        color: white !important; 
+        border: 1px solid white !important; 
+        border-radius: 40px !important;
+        padding: 0.5em 2em !important;
+        margin-top: 2em;
+        font-family: monospace; 
+        font-size: 1.2em;
+        text-align: center !important;
+    }
+
+    .box-download{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .img-container *{
+        display: flex;
+        text-align: center;
+        height: 400px!important;
+        border-radius: 50px;
+        
+    }
+    .img-container{
+        height:auto;
+        width: auto;
+    }
+
+    .row{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .banner-heading > .row{
+        gap: 3.4rem;
+    }
+}
+
+/* hero section */
+.hero-banner{
+    position: relative;
+    min-height: 100vh; /* Ensures enough space for scrolling */
+}
+
+.banner-heading{
+    color: white;
+    padding-top: 6em !important;
+    padding-left: 5em !important;
+    min-height: 120vh;
+}
+
+.heading{
+    
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    letter-spacing:5px;
+}
