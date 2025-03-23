@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="header">
-        <nav class="navbar bg-body-tertiary">
+        <!-- <nav class="navbar bg-body-tertiary">
             <div class="container nav-brand-container">
               <a class="navbar-brand nav-brand" href="#">
                 <div class="nav-brand">
@@ -21,10 +21,10 @@
                     <div class="col-2" style="visibility: hidden;margin: 0;">1</div>
                     <div class="h6 logo col" style="font-family: 'Courier New', Courier, monospace; font-size: 13px; letter-spacing: 2px;">Developer</div>
                 </div>
-              </a>
+              </a> -->
 
               <!-- phno and email -->
-              <div class="details">
+              <!-- <div class="details">
                 
                     <div class="detail-title">
                         <div class="h6">Call Me</div>
@@ -37,9 +37,9 @@
                 
               </div>
             </div>
-          </nav>
+          </nav> -->
           
-          <hr class="hr">
+          <!-- <hr class="hr"> -->
           <!-- navigation header links -->
     <div class="container mt-1 pb-2 nav-container">
         <div class="row">
@@ -101,21 +101,21 @@
             <div class="col" onclick="HideSidebar()"><i class="bi bi-x-circle" style="color: white; font-size: 30px;"></i></div>
           </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5" >
 
-            <div class="col-9">
-            <ul class="nav nav-underline underline-bottom row">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">About me</a>
+            <div class="col-12">
+            <ul class="nav nav-underline row" style="gap: 1rem; font-size: 1.2em;">
+                <li class="nav-item col-12">
+                  <a class="nav-link navigation-link" aria-current="page" href="#about-section-mobile">About me</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">Featured Project</a>
+                <li class="nav-item col-12">
+                  <a class="nav-link navigation-link" href="#">Featured Project</a>
         
-                <li class="nav-item">
-                  <a class="nav-link " href="#">Skills</a>
+                <li class="nav-item col-12">
+                  <a class="nav-link navigation-link" href="#">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Contact us</a>
+                <li class="nav-item col-12">
+                    <a class="nav-link navigation-link" href="#">Contact us</a>
                   </li>
               </ul>
         </div>
@@ -141,44 +141,105 @@
 
 
       <!-- hero banner starts -->
-      
-        <div class="row hero-banner">
-          <div class="col-lg-7 col-sm-12 banner-heading justify-content-center" >
-            <div class="row" > 
-              <div class="col-12"> 
-                <h1 class="text-align-center heading" >PRAVEEN RAVIKUMAR</h1>
+
+        <div class="content">
+            <div class="banner-heading">
+              <div class="first-section">
+                <h1 class="heading">PRAVEEN RAVIKUMAR</h1>
                 <div class="typing">
                   <span id="text"></span>
                   <div class="cursor"></div>
                 </div>
-                <div class="box-download">
-                  <a href="/images/jpg/Praveen Ravikumar CV.pdf" download>
-                  <div class="btn btn-cv">
-                    Download CV
-                  </div>
-                  </a>
-                </div>
+                <div>
+                <button class="btn-cv" href="/images/jpg/Praveen Ravikumar CV.pdf">
+                  Download CV
+                </button></div>
               </div>
-
-      
-                <div class="col-12">
-                  <h1 class="text left-section">&lt;&sol;ABOUT&gt;</h1>
-                  <div class="p paragraph-text mt-6">I’m Praveen Ravikumar, a passionate Full-Stack Developer specializing in WordPress, Shopify and Django. With expertise in HTML, CSS, JavaScript, Python, and MySQL, I develop dynamic and scalable web solutions that merge functionality with sleek UI/UX design. My skills in Framer, Figma, and SEO-friendly development ensure that every website I create is fast, responsive, and optimized for user engagement. I thrive on building seamless digital experiences, from front-end aesthetics to back-end efficiency. Let's collaborate to bring innovative and high-performance web solutions to life!</div>
-                </div>
-
+              <div class="mobile-img">
+                <img src="/images/jpg/IMG_5014.JPG" alt="">
+              </div>
+              <div class="about-section pt-5">
+                <h1 class="text left-section">&lt;&sol;ABOUT&gt;</h1>
+                <div class="p paragraph-text mt-6">I’m Praveen Ravikumar, a passionate <mark> Full-Stack Developer</mark> specializing in WordPress, Shopify and Django. With expertise in HTML, CSS, JavaScript, Python, and MySQL, I develop dynamic and scalable web solutions that merge functionality with sleek UI/UX design. My skills in Framer, Figma, and SEO-friendly development ensure that every website I create is fast, responsive, and optimized for user engagement. I thrive on building seamless digital experiences, from front-end aesthetics to back-end efficiency. Let's collaborate to bring innovative and high-performance web solutions to life!</div>
+              </div>
             </div>
 
+          <div class="img">
+            <img src="./images/jpg/IMG_5014.JPG" alt="Praveen Ravikumar Portfolio Hero Banner."
 
-          
+            ">
           </div>
-          <div class="col-lg-5 col-sm-12 img-container d-sm-flex"><img src="/images/jpg/IMG_5014.JPG" alt=""></div>
         </div>
 
 
-        <!-- section 2 -->
-        <section>
-          
-        </section>
+        
+      <!-- mobile hero banner starts -->
+      
+      <div class="row  hero-banner">
+        <div class="col-sm-12 justify-content-center pt-5" >
+          <div class="row" > 
+            <div class="col-12"> 
+              <h1 class="text-align-center heading" >PRAVEEN RAVIKUMAR</h1>
+              <div class="typing_mobile">
+                <span id="texts"></span>
+                <div class="cursor_mobile"></div>
+              </div>            
+              <div class="box-download">
+                <a href="/images/jpg/Praveen Ravikumar CV.pdf" download>
+                <div class="btn btn-cv">
+                  Download CV
+                </div>
+                </a>
+              </div>
+            </div>
+
+    
+              <div class="col-12 mt-5 mb-5 " height="100vh">
+                <h1 class="text left-section about-section-mobile">&lt;&sol;ABOUT&gt;</h1>
+                <div class="p paragraph-text mt-6">I’m Praveen Ravikumar, a passionate <mark> Full-Stack Developer </mark> specializing in WordPress, Shopify and Django. With expertise in HTML, CSS, JavaScript, Python, and MySQL, I develop dynamic and scalable web solutions that merge functionality with sleek UI/UX design. My skills in Framer, Figma, and SEO-friendly development ensure that every website I create is fast, responsive, and optimized for user engagement. I thrive on building seamless digital experiences, from front-end aesthetics to back-end efficiency. Let's collaborate to bring innovative and high-performance web solutions to life!</div>
+              </div>
+
+          </div>
+
+
+        
+        </div>
+        <div class="col-lg-5 col-sm-12 img-container d-sm-flex"><img src="/images/jpg/IMG_5014.JPG" alt=""></div>
+      </div>
+
+
+
+
+      <section class="section-2">
+        <div class="row skill-acquired ">
+          <div class="col-lg-8">
+            <div class="languages-image">
+              <div id="icons"><img src="/images/icons/html-5.png" alt=""><h6 class="text-center skill-text">HTML5</h6></div>
+              <div id="icons"><img src="/images/icons/css-3.png" alt=""><h6 class="text-center skill-text">CSS3</h6></div>
+              <div id="icons"><img src="/images/icons/js.png" alt=""><h6 class="text-center skill-text">JavaScript</h6></div>
+              <div id="icons"><img src="/images/icons/bootstrap.png" alt=""><h6 class="text-center skill-text">Bootstrap</h6></div>
+            </div>
+            <div class="languages-image">
+              <div id="icons"><img src="/images/icons/django.png" alt=""><h6 class="text-center skill-text">Django</h6></div>
+              <div id="icons"><img src="/images/icons/mysql_logo.jpg" alt=""><h6 class="text-center skill-text">MySQL</h6></div>
+              <div id="icons"><img src="/images/icons/python.png" alt=""><h6 class="text-center skill-text">Python</h6></div>
+              <div id="icons"><img src="/images/icons/framer_logo_icon.webp" alt=""><h6 class="text-center skill-text">Framer</h6></div>
+            </div>
+            <div class="languages-image">
+              <div id="icons"><img src="/images/icons/figma.png" alt=""><h6 class="text-center skill-text">Figma</h6></div>
+              <div id="icons"><img src="/images/icons/shopify.png" alt=""><h6 class="text-center skill-text">Shopify</h6></div>
+              <div id="icons"><img src="/images/icons/wordpress.png" alt=""><h6 class="text-center skill-text">Wordpress</h6></div>
+              <div id="icons"><img src="/images/icons/github.png" alt=""><h6 class="text-center skill-text">Git</h6></div>
+            </div>
+          </div>
+          <div class="col-lg-4  d-flex flex-column justify-content-center align-items-center ">
+            <span class="title">&lt;&sol;Skills Acquired&gt;</span>
+            <div class="p paragraph-text">Proficient in <mark> HTML5, CSS3, JavaScript, Python, MySQL, and frameworks like Django, and Bootstrap</mark>. Experienced with tools such as WordPress, Shopify, Figma, Framer, and version control using Git for efficient, scalable web development.</div>
+          </div>
+          </div>
+      </section>
+
+
 
 
     <script src="bootstrap.min.js"></script>
@@ -225,6 +286,38 @@
 }
 
 typing();
+
+
+// mobile cursor
+let b = ["Full-Stack Developer","Web Developer","Shopify Developer","Wordpress Developer","Artist"];
+  let refer = document.getElementById("texts");
+  let index = 0, cIndex = 0;
+  let removing = false;
+  // ref.style.fontSize ="2rem";
+  refer.style.fontFamily ="monospace";
+
+  function typing_mobile() {
+if (index < b.length) {
+    let currentText_1 = b[index];
+    if (!removing && cIndex < currentText_1.length) {
+        refer.textContent += currentText_1.charAt(cIndex);
+        cIndex++;
+        setTimeout(typing_mobile, 100);
+    } else if (removing&& cIndex >= 0) {
+        refer.textContent = currentText_1.substring(0, cIndex);
+        cIndex--;
+        setTimeout(typing_mobile, 100);
+    } else {
+        removing = !removing;
+        if (!removing) {
+            index = (index + 1) % b.length;
+        }
+        setTimeout(typing_mobile, 1000);
+    }
+}
+}
+
+typing_mobile();  
 
     </script>
 </body>
