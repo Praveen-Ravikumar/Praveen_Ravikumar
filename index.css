@@ -7,8 +7,13 @@
     background-color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
-    background-color: black;
+    background-color: black !important;
+    
 }
 
 
@@ -216,7 +221,6 @@ body{
     margin-top: 3em;
     font-family: monospace; 
     font-size: 1.2em;
-    cursor: wait;
     background: linear-gradient(145deg, #2a2a2a, #383838);
     border: 2px solid #ff4081;
     
@@ -421,8 +425,66 @@ body{
         letter-spacing:5px;
         text-align: center;
     }
-}
 
+    #icons:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 0 #ffffff50;
+        border: 2px solid #ffc400;
+        border-radius: 8px;
+    }
+
+    #icons > img {
+    -webkit-filter: grayscale(0%) !important; 
+    filter: grayscale(0%) !important;
+    }
+
+    .pad{
+        padding: 0px 15px;
+    }
+
+    .section-2{
+        position: relative !important;
+    }
+
+    .experience-section{
+        margin-top: 3rem !important;
+        padding: 1em !important ;
+    }
+    .companies{
+        padding: 0 !important;
+    }
+
+    .experience-companies{
+        gap: 80px !important;
+    }
+
+    .project-wrapper{
+        padding: 2rem 1rem 2rem 1rem !important;
+        height: auto !important;
+    }
+
+    .project-child{
+        padding: 1em !important;
+    }
+
+    .projec-headlines{
+        padding: 0.5em !important;
+    }
+    
+    .social-media-container{
+        padding: 0rem 0rem 1rem 0rem!important;
+    }
+
+    .btn-noti{
+        font-size: 0.7em !important;
+    }
+    .exp-title{
+        text-align: center;
+    }
+}
+.project-headlines{
+    padding: 3rem 3rem 1rem 3rem;
+}
 
 .mobile-img{
     display: none;
@@ -498,8 +560,8 @@ body{
 
 
 #icons > img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     /* background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,0.20021651238620453) 50%, rgba(255,255,255,0.16940418745623254) 100%); */
     -webkit-filter: grayscale(100%); 
@@ -573,4 +635,205 @@ mark {
     font-size: 3rem;
     letter-spacing:5px;
     color: #ffc400;
+}
+
+.experience-section{
+    /* height:100vh ; if i include this the project section is overlapping in the workexp section */
+    width: 100%;
+    padding: 3rem ;
+    position: relative;
+    
+}
+
+.experience-companies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 500px;
+    margin: 50px auto auto auto;
+}
+
+.companies{
+    background-color: black !important;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.companies{
+    display: flex;
+    gap: 7px;
+    background-color: #2a2a2a;
+    
+}
+
+.company-role{
+    font-size: 1.5rem;
+    font-family: "Clash Display", sans-serif;
+    letter-spacing: 2px;
+}
+
+.company-duration{
+    font-size: 1.2rem;
+    font-family: "Inconsolata", monospace;
+}
+
+.company-desc{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-family: "Inconsolata", monospace;
+    border-left: 4px solid #fff;
+    font-size: 1em;
+}
+
+.work-exp{
+    position: sticky;
+    top: 200px;
+    font-size: 2.9rem;
+}
+
+
+.list-item{
+    padding: 0.4em 0;
+    list-style-type: none;
+}
+
+
+.project-wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 3rem;
+}
+
+.project-container{
+    /* background-color: red; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+    white-space: nowrap !important;
+}
+
+.project-container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+.project-child{
+    width: 350px;
+    height: auto;
+    /* background-color: blue; */
+    margin:10px;
+    display: inline-block;
+    border-radius: 8px;
+    color:white;
+   
+}
+
+
+.project-img{
+    width: auto;
+    height: 200px;
+    border-radius: 8px 8px 0px 0px;
+    
+}
+
+.project-img > img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    z-index: 1;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+}
+
+.project-content-container{
+    padding: 10px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 8px ;
+    z-index: 10;
+    margin-top: -5px;
+    position: relative;
+    box-shadow: 0px -5px 10px rgb(40, 40, 40);
+    white-space: normal;
+    word-break: break-word;
+    gap: 10px;
+}
+
+.project-title{
+    font-family: "Clash display", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.project-description{
+    width: auto;
+    font-family: "Inconsolata", monospace;
+}
+
+.project-tech-used{
+    font-size: 0.6em;
+    display: flex;
+    gap: 10px;
+    font-family: "Inconsolata", monospace;
+}
+
+.tech-used{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color:rgba(199, 196, 196, 0.513);
+    padding: 5px 15px 5px 15px;
+}
+
+.view-project  button{
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 15px 10px 15px;
+}
+
+.footer-link-container *{
+    background-color: black;
+}
+
+.social-media-container{
+    position: relative;
+    color: rgb(188, 188, 188);
+    padding:5rem 0 1rem 0;
+}
+
+.scroll-notification-btn{
+    position: relative;
+}
+
+.btn-noti{
+    position: relative;
+}
+
+.btn-noti{
+    cursor: wait;
+    color: white !important; 
+    border: 1px solid white !important; 
+    border-radius: 40px !important;
+    padding: 0.5em 2em !important;
+    font-family: monospace; 
+    font-size: 0.9em;
+    cursor: wait;
+    background: linear-gradient(145deg, #2a2a2a, #383838);
+    border: 2px solid #ff4081;
+    margin-bottom: 10px;
+}
+
+.copyrights > span{
+    font-family: "Inconsolata", monospace;
 }

@@ -1,73 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .typing_mobile > #texts{
-    font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-    color: white;
-}
-    .cursor_mobile {
-    display: inline-block;
-    width: 6px;
-    height: 30px;
-    background-color: rgb(255, 255, 255);
-    animation: blink 0.7s infinite;
-}
-@keyframes blink {
-
-    0%,
-    100% {
-        background-color: transparent;
-    }
-
-    50% {
-        background-color: rgb(250, 250, 250);
-    }
-}
-  </style>
-</head>
-<body style="background-color: black;">
-  <div class="typing_mobile">
-    <span id="texts"></span>
-    <div class="cursor_mobile"></div>
-  </div>
-
-  <script>
-  let b = ["Full-Stack Developer","Web Developer","Shopify Developer","Wordpress Developer","Artist"];
-  let refer = document.getElementById("texts");
-  let index = 0, cIndex = 0;
-  let removing = false;
-  // ref.style.fontSize ="2rem";
-  refer.style.fontFamily ="monospace";
-
-  function typing_mobile() {
-if (index < b.length) {
-    let currentText_1 = b[index];
-    if (!removing && cIndex < currentText_1.length) {
-        refer.textContent += currentText_1.charAt(cIndex);
-        cIndex++;
-        setTimeout(typing_mobile, 100);
-    } else if (removing&& cIndex >= 0) {
-        refer.textContent = currentText_1.substring(0, cIndex);
-        cIndex--;
-        setTimeout(typing_mobile, 100);
-    } else {
-        removing = !removing;
-        if (!removing) {
-            index = (index + 1) % b.length;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: red;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;     /* Firefox */
         }
-        setTimeout(typing_mobile, 1000);
-    }
-}
+
+        .parent::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
 }
 
-typing_mobile();
-</script>
+        .child{
+            width: 200px;
+            height: 190px;
+            background-color: blue;
+            margin:10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
 </body>
 </html>
-
