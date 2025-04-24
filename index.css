@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
   }
 
 body{
@@ -92,13 +93,40 @@ body{
     margin-top: 0px;
   }
 
-.icon-container > i{
+/* .icon-container > i{
     border: 0.5px solid white;
     font-size: 0.7rem;
     padding: 6px;
     color: white !important;
     border-radius: 8px 0px 8px 8px;
+} */
+
+.icon-container a > i {
+    border: 0.5px solid white;
+    font-size: 0.7rem;
+    padding: 6px;
+    color: white !important;
+    border-radius: 8px 0px 8px 8px;
+    transition: all 0.3s ease;
 }
+
+.footer-icons a >i{
+    padding: 6px;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.icon-container a:hover > i {
+    background-color: white;
+    color: black !important;
+}
+
+  .icon-container a:hover {
+        /* color: none; */
+        text-decoration: none;
+        background-color: transparent;
+  }
+  
 
 .nav-brand-container{
     flex-wrap: nowrap;
@@ -108,6 +136,9 @@ body{
 }
 
 @media (max-width:768px){
+    html {
+        scroll-padding-top: 60px; /* or height of your fixed navbar */
+      }
     
 .nav-link:focus, .nav-link:hover {
     border-bottom: 1px solid white;
@@ -154,6 +185,9 @@ body{
         z-index: 100;
         padding-top: 1em ! important;
     }
+    html {
+        scroll-padding-top: 120px; /* or height of your fixed navbar */
+      }
 }
 
 
@@ -604,8 +638,9 @@ background: linear-gradient(180deg, rgba(255,255,255,0.20021651238620453) 50%, r
     padding: 3rem ;
     position: sticky;
     top: 0px;
-
+    overflow-x: auto;
 }
+
 
 
 mark {
