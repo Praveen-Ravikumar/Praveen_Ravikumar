@@ -116,13 +116,23 @@ body{
     transition: all 0.3s ease;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+
 .icon-container a:hover > i {
     background-color: white;
     color: black !important;
 }
 
   .icon-container a:hover {
-        /* color: none; */
+        color: white !important;
         text-decoration: none;
         background-color: transparent;
   }
